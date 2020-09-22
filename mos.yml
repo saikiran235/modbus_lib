@@ -11,6 +11,8 @@ tags:
 
 filesystem:
   - fs
+includes:
+  - include
 
 config_schema:
   - ["mqtt.server", "broker.mqtt-dashboard.com:1883"]
