@@ -11,6 +11,8 @@ tags:
 
 filesystem:
   - fs
+sources:
+  - src
 includes:
   - include
 
