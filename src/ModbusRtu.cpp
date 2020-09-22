@@ -39,8 +39,23 @@
  */
 
 #include "ModbusRtu.h"
-
-
+class Modbus
+{
+private:
+    Stream *port; //!< Pointer to Stream class object (Either HardwareSerial or SoftwareSerial)
+    uint8_t u8id; //!< 0=master, 1..247=slave number
+    uint8_t u8txenpin; //!< flow control pin: 0=USB or RS-232 mode, >1=RS-485 mode
+    uint8_t u8state;
+    uint8_t u8lastError;
+    uint8_t au8Buffer[MAX_BUFFER];
+    uint8_t u8BufferSize;
+    uint8_t u8lastRec;
+    uint16_t *au16regs;
+    uint16_t u16InCnt, u16OutCnt, u16errCnt;
+    uint16_t u16timeOut;
+    uint32_t u32time, u32timeOut, u32overTime;
+    uint8_t u8regsize;
+};
     //
     // Deprecated functions
 
