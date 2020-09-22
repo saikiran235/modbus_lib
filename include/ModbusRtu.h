@@ -39,8 +39,8 @@
  */
 
 #include <inttypes.h>
-#include "Arduino.h"
-#include <Stream.h>
+#include <Arduino.h>
+
 
 
 /**
