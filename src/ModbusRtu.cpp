@@ -38,7 +38,7 @@
  *
  */
 
-#include <ModbusRtu.h>
+#include "ModbusRtu.h"
 
 /**
  * @struct modbus_t
