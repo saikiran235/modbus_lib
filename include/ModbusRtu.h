@@ -40,6 +40,7 @@
 
 #include <inttypes.h>
 #include "Arduino.h"
+#include<stream.h>
 
 
 /**
