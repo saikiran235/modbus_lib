@@ -1,5 +1,6 @@
 #include <inttypes.h>
 #include "Arduino.h"
+#include<sstream>
 /**
  * @struct modbus_t
  * @brief
