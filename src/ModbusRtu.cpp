@@ -60,18 +60,7 @@ private:
     // Deprecated functions
 
     // Deprecated: Use constructor: "Modbus m(0,Serial,0)" instead.
-    Modbus(uint8_t u8id=0, uint8_t u8serno=0, uint8_t u8txenpin=0) __attribute__((deprecated));
-
-    // Deprecated: Use "start()" instead.
-    template<typename T_Stream>
-    void begin(T_Stream* port_, long u32speed_) __attribute__((deprecated));
-
-    // Deprecated: Use "start()" instead.
-    template<typename T_Stream>
-    void begin(T_Stream* port_, long u32speed_, uint8_t u8txenpin_) __attribute__((deprecated));
-
-    // Deprecated: Use "start()" instead.
-    void begin(long u32speed = 19200) __attribute__((deprecated));
+   
 
 
 /* _____PUBLIC FUNCTIONS_____________________________________________________ */
