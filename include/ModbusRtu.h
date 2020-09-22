@@ -114,7 +114,7 @@ class Modbus
 {
 private:
     
-
+Stream *port;
     void sendTxBuffer();
     int8_t getRxBuffer();
     uint16_t calcCRC(uint8_t u8length);
@@ -149,16 +149,16 @@ public:
     void setID( uint8_t u8id ); //!<write new ID for the slave
     void setTxendPinOverTime( uint32_t u32overTime );
     void end(); //!<finish any communication and release serial communication port
-Modbus(uint8_t u8id=0, uint8_t u8serno=0, uint8_t u8txenpin=0) __attribute__((deprecated));
+//Modbus(uint8_t u8id=0, uint8_t u8serno=0, uint8_t u8txenpin=0) __attribute__((deprecated));
 
     // Deprecated: Use "start()" instead.
-    template<typename T_Stream>
-    void begin(T_Stream* port_, long u32speed_) __attribute__((deprecated));
+    //template<typename T_Stream>
+    //void begin(T_Stream* port_, long u32speed_) __attribute__((deprecated));
 
     // Deprecated: Use "start()" instead.
-    template<typename T_Stream>
-    void begin(T_Stream* port_, long u32speed_, uint8_t u8txenpin_) __attribute__((deprecated));
+    //template<typename T_Stream>
+    //void begin(T_Stream* port_, long u32speed_, uint8_t u8txenpin_) __attribute__((deprecated));
 
     // Deprecated: Use "start()" instead.
-    void begin(long u32speed = 19200) __attribute__((deprecated));
+    //void begin(long u32speed = 19200) __attribute__((deprecated));
 };

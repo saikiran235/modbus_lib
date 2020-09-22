@@ -182,13 +182,13 @@ void Modbus::start()
  * @param u32speed     baud rate, in standard increments (300..115200)
  * @ingroup setup
  */
-template<typename T_Stream>
+/*template<typename T_Stream>
 void Modbus::begin(T_Stream* install_port, long u32speed)
 {
     port = install_port;
     install_port->begin(u32speed);
     start();
-}
+}*/
 
 
 /**
@@ -203,14 +203,14 @@ void Modbus::begin(T_Stream* install_port, long u32speed)
  * @param u8txenpin     pin for txen RS-485 (=0 means USB/RS232C mode)
  * @ingroup setup
  */
-template<typename T_Stream>
+/*template<typename T_Stream>
 void Modbus::begin(T_Stream* install_port, long u32speed, uint8_t u8txenpin)
 {
     this->u8txenpin = u8txenpin;
     this->port = install_port;
     install_port->begin(u32speed);
     start();
-}
+}*/
 
 
 /**
@@ -224,12 +224,12 @@ void Modbus::begin(T_Stream* install_port, long u32speed, uint8_t u8txenpin)
  * @param speed   baud rate, in standard increments (300..115200). Default=19200
  * @ingroup setup
  */
-void Modbus::begin(long u32speed)
+'/*void Modbus::begin(long u32speed)
 {
     // !!Can ONLY do this if port ACTUALLY IS a HardwareSerial object!!
     static_cast<HardwareSerial*>(port)->begin(u32speed);
     start();
-}
+}*/
 
 
 /**
