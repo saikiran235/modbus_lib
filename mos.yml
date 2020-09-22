@@ -11,12 +11,17 @@ tags:
 
 filesystem:
   - fs
+sources:
+  - src
+includes:
+  - include
 
 config_schema:
   - ["mqtt.server", "broker.mqtt-dashboard.com:1883"]
 
 libs:
   - origin: https://github.com/mongoose-os-libs/core
+  - origin: https://github.com/mongoose-os-libs/arduino-compat
   
 
 # Used by the mos tool to catch mos binaries incompatible with this file format
