@@ -40,6 +40,10 @@
 
 #include <inttypes.h>
 #include <Arduino.h>
+#include<iostream>
+#include<sstream>
+#include<stream.h>
+#include "HardwareSerial.h"
 
 
 
