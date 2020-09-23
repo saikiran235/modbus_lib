@@ -42,7 +42,7 @@
 #include <Arduino.h>
 #include<iostream>
 #include<sstream>
-#include<stream.h>
+#include<Stream.h>
 #include "HardwareSerial.h"
 
 
